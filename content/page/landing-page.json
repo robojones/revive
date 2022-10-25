@@ -1,0 +1,25 @@
+{
+  "news": [
+    {
+      "title": "Medizin und Gesundheit",
+      "description": "Wie Kryobehandlung Deine Gesundheit fördert",
+      "url": "http://www.example.com/news/1",
+      "image": "http://www.example.com/news/1/image.jpg",
+      "date": "2015-01-01 00:00:00"
+    },
+    {
+      "title": "Profisport und Fitness",
+      "description": "Bringe Deine Leistung auf ein neues Level",
+      "url": "http://www.example.com/news/2",
+      "image": "http://www.example.com/news/2/image.jpg",
+      "date": "2015-01-02 00:00:00"
+    },
+    {
+      "title": "Wellness und Beauty",
+      "description": "Kryobehandlung für ein strahlendes Aussehen",
+      "url": "http://www.example.com/news/2",
+      "image": "http://www.example.com/news/2/image.jpg",
+      "date": "2015-01-02 00:00:00"
+    }
+  ]
+}
