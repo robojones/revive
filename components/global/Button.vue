@@ -20,8 +20,8 @@ export default {
   //   }
   // },
  props: {
-   to: "",
-   text: "",
+   to: String,
+   text: String,
  }
 }
 </script>

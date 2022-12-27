@@ -1,20 +1,17 @@
 {
+  "welcomeMessage": "Willkommen bei Revive Freiburg!",
   "news": [
     {
-      "title": "Medizin und Gesundheit",
       "description": "Wie Kryobehandlung Deine Gesundheit fördert",
       "url": "/",
-      "overlay": "dark",
       "image": "/img/stock/happy-jump.jpg"
     },
     {
-      "title": "Profisport und Fitness",
       "description": "Bringe Deine Leistung auf ein neues Level",
       "url": "/",
       "image": "http://www.example.com/news/2/image.jpg"
     },
     {
-      "title": "Wellness und Beauty",
       "description": "Kryobehandlung für ein strahlendes Aussehen",
       "url": "/",
       "image": "http://www.example.com/news/2/image.jpg"

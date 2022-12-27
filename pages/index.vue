@@ -6,7 +6,7 @@
 <!--    </section>-->
 
 
-    <news :news="page.news"></news>
+    <news :welcome-message="page.welcomeMessage" :news="page.news"></news>
     
 <!--    <section class="mt-8">-->
 <!--      <img src="/img/stock-hands.webp">-->

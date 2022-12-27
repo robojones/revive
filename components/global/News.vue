@@ -2,7 +2,7 @@
   <div class="news">
     <div class="item" :style="{backgroundImage: `url(${news[0].image})`}">
       <div class="item-content">
-        <h2 class="item-title">{{ news[0].title }}</h2>
+        <h2 class="item-title">{{ welcomeMessage }}</h2>
         <div class="item-details">
           <p class="item-description">
             <b>Neu:</b>
@@ -28,12 +28,13 @@ export default {
   //     news: []
   //   }
   // },
- props: {
-   news: {
-     type: Array,
-     default: () => []
-   }
- }
+  props: {
+    welcomeMessage: String,
+    news: {
+      type: Array,
+      default: () => []
+    }
+  }
 }
 </script>
 
@@ -74,6 +75,7 @@ export default {
   display: block;
   background-color: #FFFFFF;
   padding: var(--default-text-padding-horizontal) var(--default-sidebar-width);
+  font-weight: normal;
 }
 
 .item-details {
