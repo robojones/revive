@@ -38,7 +38,7 @@ export default {
 
 .button-text {
   color: var(--color-white);
-  margin-right: var(--default-text-padding-horizontal);
+  margin-right: 1rem;
 }
 
 .icon {
