@@ -6,9 +6,7 @@
 <!--    </section>-->
 
 
-    <div class="news">
-
-    </div>
+    <news :news="page.news"></news>
     
 <!--    <section class="mt-8">-->
 <!--      <img src="/img/stock-hands.webp">-->
@@ -25,25 +23,25 @@
 main {
   padding: 0;
 }
-
-.news {
-  background-image: url("/img/stock-hands.webp");
-  background-position: center;
-  background-size: cover;
-  height: 700px;
-}
 </style>
 
 <script>
+import News from "~/components/global/News";
 export default {
+  components: {News},
   async asyncData({ $content, error }) {
-    let info;
+    let info, page;
     try {
       info = await $content("site", "info").fetch();
     } catch (e) {
       error({ message: "Content not found" });
     }
-    return { info };
+    try {
+      page = await $content("page", "landing-page").fetch();
+    } catch (e) {
+      error({ message: "Content not found" });
+    }
+    return { info, page };
   },
 }
 </script>

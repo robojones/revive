@@ -25,8 +25,11 @@ export default {
 
 <style lang="postcss" scoped>
 .logo {
-  height: 3.5rem;
+  height: 2.5rem;
   width: 15.18rem;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
   background-image: url("/img/logo.svg");
 }
 .navbar {

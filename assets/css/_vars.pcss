@@ -4,47 +4,37 @@
   * The CSS Variables are then used in tailwind.config.js so that e.g. `bg-primary-200` can be used.
   */
 :root {
-  --color-primary-100: #ECEFF5;
-  --color-primary-200: #C3CBDC;
-  --color-primary-300: #9BA8C2;
-  --color-primary-400: #7686A6;
-  --color-primary:     #526488;
-  --color-primary-600: #3E4F70;
-  --color-primary-700: #2C3A57;
-  --color-primary-800: #1C263B;
-  --color-primary-900: #0D131E;
-
-  --color-gray-50:     #F9FAFB;
-  --color-gray-100:    #F3F4F6;
-  --color-gray-200:    #E5E7EB;
-  --color-gray-300:    #D1D5DB;
-  --color-gray-400:    #9CA3AF;
-  --color-gray:        #6B7280;
-  --color-gray-600:    #4B5563;
-  --color-gray-700:    #374151;
-  --color-gray-800:    #1F2937;
-  --color-gray-900:    #111827;
+  --color-primary-100: #FAFAFA;
+  --color-primary-400: #888888;
+  --color-primary: #444444;
 
   --color-white:       #FFFFFF;
 
-  --text: var(--color-primary-200);
+  --color-accent: #2D81C1;
+
+  --text: var(--color-primary);
   --text-secondary: var(--color-primary-400);
 
   --bg: var(--color-white);
-  --bg-transparent: rgba(255, 255, 255, 0.8);
-  --bg-secondary: var(--color-gray-800);
+  --bg-transparent: rgba(255, 255, 255, 0.9);
+  --bg-secondary: var(--color-primary-100);
 
   --border-color: var(--color-primary-400);
   --border-color-secondary: var(--color-primary);
-}
 
-.light {
-  --text: var(--color-primary-800);
-  --text-secondary: var(--color-primary-600);
+  --default-spacing-top: 3rem;
+  --default-spacing-bottom: 3rem;
 
-  --bg: var(--color-white);
-  --bg-secondary: var(--color-white);
+  --default-content-width: 60vw;
+  --default-sidebar-width: 20vw;
 
-  --border-color: var(--color-primary);
-  --border-color-secondary: var(--color-primary-600);
+  --default-box-padding-vertical: 1rem;
+  --default-box-padding-horizontal: 1rem;
+
+  --default-text-padding-vertical: 0.75rem;
+  --default-text-padding-horizontal: 1.5rem;
+  --default-text-padding: var(--default-text-padding-vertical) var(--default-text-padding-horizontal);
+
+  --default-button-padding: var(--default-text-padding);
+  --default-button-background-color: var(--color-accent);
 }
