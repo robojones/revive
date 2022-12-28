@@ -7,7 +7,7 @@
 
 
     <news :welcome-message="page.welcomeMessage" :news="page.news"></news>
-    
+    <feature v-for="feature in page.features" :image="feature.image" :title="feature.title" :text="feature.text" :link="feature.url" v-bind:key="feature.title"></feature>
 <!--    <section class="mt-8">-->
 <!--      <img src="/img/stock-hands.webp">-->
 <!--    </section>-->
@@ -27,8 +27,11 @@ main {
 
 <script>
 import News from "~/components/global/News";
+import Feature from "~/components/global/Feature.vue";
 export default {
-  components: {News},
+  computed: {
+  },
+  components: {News, Feature},
   async asyncData({ $content, error }) {
     let info, page;
     try {

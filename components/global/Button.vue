@@ -31,7 +31,7 @@ export default {
   background-color: var(--default-button-background-color);
   white-space: nowrap;
 
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   padding: var(--default-button-padding);
 }

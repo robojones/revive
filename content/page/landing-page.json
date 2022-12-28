@@ -20,9 +20,9 @@
   "features": [
     {
       "title": "Hol beim Sport mehr heraus!",
-      "description": "Die Kryo-Behandlung fördert die Durchblutung und hilft dadurch die Regeneration und das Muskelwachstum zu maximieren. In unserem neuen Artikel zum Thema “Kryo und Sport” erfährst du zahlreiche Vorteile, die die Behandlung Dir bietet.",
+      "text": "Die Kryo-Behandlung fördert die Durchblutung und hilft dadurch die Regeneration und das Muskelwachstum zu maximieren. In unserem neuen Artikel zum Thema “Kryo und Sport” erfährst du zahlreiche Vorteile, die die Behandlung Dir bietet.",
       "url": "/",
-      "image": "/img/stock/running.jpg"
+      "image": "/img/stock/sprint.jpg"
     }
   ]
 }
