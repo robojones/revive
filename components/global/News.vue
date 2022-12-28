@@ -2,7 +2,7 @@
   <div class="news">
     <div v-for="(item, index) in news" v-bind:key="item.description" :class="{item: true, first: index === 0, active: index === active}" :style="{backgroundImage: `url(${item.image})`}">
       <div class="item-content">
-        <h2 class="item-title">{{ welcomeMessage }}</h2>
+        <h1 class="item-title">{{ welcomeMessage }}</h1>
         <div class="item-details">
           <p class="item-description">
             <b>Neu:</b>
@@ -47,7 +47,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 80vh;
+  min-height: var(--default-section-min-height);
   padding-top: 40%; /* 40% of the width */
   display: flex;
 
