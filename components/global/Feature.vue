@@ -1,5 +1,5 @@
 <template>
-  <div class="feature">
+  <div :class="{feature: true, textLeft: textLeft}">
     <div class="image-box">
       <div class="image" :style="{backgroundImage: `url(${image})`}"></div>
     </div>
@@ -29,6 +29,7 @@ export default {
     title: String,
     text: String,
     link: String,
+    textLeft: Boolean,
   }
 }
 </script>
@@ -40,6 +41,10 @@ export default {
 
   display: flex;
   flex-direction: row;
+}
+
+.feature.textLeft {
+  flex-direction: row-reverse;
 }
 
 .feature > * {
@@ -55,6 +60,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
 
+  height: 100%;
   padding-top: 100%; /* should be at minimum a square */
 }
 
