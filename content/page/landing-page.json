@@ -9,12 +9,20 @@
     {
       "description": "Bringe Deine Leistung auf ein neues Level",
       "url": "/",
-      "image": "http://www.example.com/news/2/image.jpg"
+      "image": "/img/stock/happy-jump.jpg"
     },
     {
       "description": "Kryobehandlung für ein strahlendes Aussehen",
       "url": "/",
-      "image": "http://www.example.com/news/2/image.jpg"
+      "image": "/img/stock/happy-jump.jpg"
+    }
+  ],
+  "features": [
+    {
+      "title": "Hol beim Sport mehr heraus!",
+      "description": "Die Kryo-Behandlung fördert die Durchblutung und hilft dadurch die Regeneration und das Muskelwachstum zu maximieren. In unserem neuen Artikel zum Thema “Kryo und Sport” erfährst du zahlreiche Vorteile, die die Behandlung Dir bietet.",
+      "url": "/",
+      "image": "/img/stock/running.jpg"
     }
   ]
 }

@@ -1,15 +1,15 @@
 <template>
   <div class="news">
-    <div class="item" :style="{backgroundImage: `url(${news[0].image})`}">
+    <div v-for="(item, index) in news" v-bind:key="item.description" :class="{item: true, first: index === 0, active: index === active}" :style="{backgroundImage: `url(${item.image})`}">
       <div class="item-content">
         <h2 class="item-title">{{ welcomeMessage }}</h2>
         <div class="item-details">
           <p class="item-description">
             <b>Neu:</b>
-            {{ news[0].description }}
+            {{ item.description }}
           </p>
           <div class="item-action">
-            <Button v-if="news && news[0]" :to="news[0].url">Jetzt mehr erfahren</Button>
+            <Button :to="item.url">Jetzt mehr erfahren</Button>
           </div>
         </div>
       </div>
@@ -23,11 +23,11 @@ import Button from "~/components/global/Button.vue";
 export default {
   name: 'News',
   components: {Button},
-  // data() {
-  //   return {
-  //     news: []
-  //   }
-  // },
+  data() {
+    return {
+      active: 0,
+    }
+  },
   props: {
     welcomeMessage: String,
     news: {
@@ -56,6 +56,19 @@ export default {
   left: 0;
   right: 0;
   top: 0;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.item.first {
+  position: relative;
+}
+
+.item.active {
+  pointer-events: all;
+  opacity: 1;
 }
 
 .item-content {
@@ -79,20 +92,21 @@ export default {
 }
 
 .item-details {
+  margin: var(--default-box-padding-vertical) var(--default-sidebar-width);
+
   display: flex;
   flex-direction: row;
+}
 
-  margin: var(--default-box-padding-vertical) var(--default-sidebar-width);
+.item-description {
+  flex-grow: 1;
+  padding: var(--default-text-padding-vertical) var(--default-text-padding-horizontal) var(--default-text-padding-vertical) 0;
 }
 
 .item-action {
   flex-grow: 0;
-  margin-right: auto;
-}
 
-.item-description {
-  padding: var(--default-text-padding-vertical) var(--default-text-padding-horizontal) var(--default-text-padding-vertical) 0;
-  flex-grow: 0;
+  //margin-right: auto;
 }
 
 .item-content {
