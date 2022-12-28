@@ -7,8 +7,15 @@
 
 
     <news :welcome-message="page.welcomeMessage" :news="page.news"></news>
-    <feature v-for="feature in page.features" :image="feature.image" :title="feature.title" :text="feature.text" :link="feature.url" v-bind:key="feature.title"></feature>
-    <feature v-for="feature in page.features" :image="feature.image" :title="feature.title" :text="feature.text" :link="feature.url" v-bind:key="feature.title" :text-left="true"></feature>
+    <feature
+        v-for="(feature, index) in page.features"
+        :image="feature.image"
+        :title="feature.title"
+        :text="feature.text"
+        :link="feature.url"
+        v-bind:key="feature.title"
+        :text-left="!!(index % 2)"
+    ></feature>
 <!--    <section class="mt-8">-->
 <!--      <img src="/img/stock-hands.webp">-->
 <!--    </section>-->
